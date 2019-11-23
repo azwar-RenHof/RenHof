@@ -43,7 +43,7 @@
 
 </head>
 
-<body id="top">
+
 <!-- Google Tag Manager (noscript) -->
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PDTWJ3Z"
                   height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
@@ -111,6 +111,7 @@
         </div>
     </div>
 </header>
+
 
 <?php include('config.php');?>
 <!-- main header end -->
