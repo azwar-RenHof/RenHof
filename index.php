@@ -3,7 +3,7 @@
 <!-- main header end -->
 
 
-<body>
+
 
 <!-- Banner start -->
 <div class="banner banner-bg" id="particles-banner-wrapper">
@@ -30,7 +30,7 @@
     </div>
 
 
-</body>
+
 <!-- Footer start -->
 
 <?php include('include/footer.php');?>

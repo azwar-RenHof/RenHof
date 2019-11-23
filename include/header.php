@@ -51,7 +51,7 @@
 <div class="page_loader"></div>
 -->
 
-
+<body>
 <!-- main header start -->
 <header class="main-header sticky-header" id="main-header-2">
     <div class="container">
