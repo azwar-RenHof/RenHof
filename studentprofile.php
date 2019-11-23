@@ -4,7 +4,7 @@
 
 	<?php include'include/propertiesheader.php';
 
-	include'include/config.php';
+	include'config.php';
 
 	$id= $_SESSION['id'];
 	$query=mysqli_query($con,"select * from student where id='$id'");

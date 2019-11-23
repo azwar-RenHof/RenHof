@@ -48,7 +48,7 @@
         <?php  include'config.php';
 
         $query = "SELECT DISTINCT bedroom FROM property ORDER BY bedroom ASC"; 
-        $data = mysqli_query($link, $query) or die(mysqli_error($link));
+        $data = mysqli_query($con, $query) or die(mysqli_error($con));
 
         ?>
 
@@ -94,7 +94,7 @@
         <?php  
 
         $query2 = "SELECT DISTINCT bathroom FROM property ORDER BY bathroom ASC"; 
-        $data2 = mysqli_query($link, $query2) or die(mysqli_error($link));
+        $data2 = mysqli_query($con, $query2) or die(mysqli_error($con));
 
         ?>
          <select name="bathroom">
@@ -163,7 +163,7 @@
             $query = "SELECT * FROM property WHERE (address LIKE '%$location%') AND (price BETWEEN '$minprice' AND '$maxprice') AND (bedroom LIKE '%$bed%') AND (bathroom LIKE '%$bath%') AND (furnish LIKE '%$furnish%') AND status='1'";
             
 
-            $data = mysqli_query($link, $query) or die(mysqli_error($link));
+            $data = mysqli_query($con, $query) or die(mysqli_error($con));
             
             if(mysqli_num_rows($data) > 0){
                 // echo "hi";

@@ -91,7 +91,7 @@
                                   
                                         <?php
                                         $i=1;
-include'include/config.php';
+include'../config.php';
 
 $query=mysqli_query($con,"select * from property where status=0");
 while($res=mysqli_fetch_array($query))

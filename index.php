@@ -1,29 +1,7 @@
 
 <?php include('include/header.php');?>
 <!-- main header end -->
-<?php
-    include('config.php');
-    if(isset($_POST['submit']))
-    {
-      
-      $location=$_POST['location'];
-      $lat=$_POST['lat'];
-      $lng=$_POST['lng'];
-      echo "_____________".$location."----";  
-      
-      $query="INSERT INTO location(location,place_Lat,place_Lng)
-                VALUES('$location','$lat','$lng')";
 
-      if(mysqli_query($link,$query))
-      {
-        echo "<div class='alert alert-success'>Place inserted in Database</div>";
-      }else
-      {
-        echo "<div class='alert alert-success'>Data unsaved</div>";
-      }
-
-      
-    } ?>
 
 <body>
 

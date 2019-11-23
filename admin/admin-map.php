@@ -1,6 +1,6 @@
 
 <?php
-include('include/header.php');
+// include('include/header.php');
 include_once 'header.php';
 include_once 'locations_model.php';
 include('include/sidebar.php');

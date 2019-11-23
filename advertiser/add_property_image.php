@@ -8,7 +8,7 @@
 
 include('include/header.php');
 extract($_REQUEST);
-include'include/config.php';
+include'../config.php';
 
 $advertiser= $_SESSION['adv_id'];
 if(isset($submit))

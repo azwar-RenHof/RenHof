@@ -1,7 +1,7 @@
 <?php 
    include('include/header.php');
 extract($_REQUEST);
-include'include/config.php';
+include'../config.php';
 if(isset($submit))
 {
 

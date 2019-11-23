@@ -69,7 +69,7 @@
                                     <tbody>
                                         <?php
                                         $i=1;
-include'include/config.php';
+include'../config.php';
 
 
 

@@ -1,6 +1,6 @@
 <?php 
 
-include'include/config.php';
+include'../config.php';
 
 $sid=$_GET['x'];
 

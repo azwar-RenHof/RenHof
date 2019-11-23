@@ -1,6 +1,6 @@
 <?php 
 include('include/header.php');
-include'include/config.php';
+include'../config.php';
 extract($_REQUEST);
 
 $id=$_REQUEST['adv_id'];

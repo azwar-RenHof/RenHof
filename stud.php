@@ -11,7 +11,7 @@ if(isset($_POST['signup']))
 	$contact=$_POST['contact'];
 	$a=date('Y-m-d');
 
-	 $msg=mysqli_query($link,"insert into student(fname,lname,email,password,contact,posting_date) values('$fname','$lname','$email','$password','$contact','$a')");
+	 $msg=mysqli_query($con,"insert into student(fname,lname,email,password,contact,posting_date) values('$fname','$lname','$email','$password','$contact','$a')");
 
 	if($msg){
 		echo  "<script>alert('Registered !');</script>";
@@ -37,7 +37,7 @@ if(isset($_POST['login']))
 {
 $password=$_POST['password'];
 $useremail=$_POST['email'];
-$ret= mysqli_query($link,"SELECT * FROM student WHERE email='$useremail' and password='$password'");
+$ret= mysqli_query($con,"SELECT * FROM student WHERE email='$useremail' and password='$password'");
 $num=mysqli_fetch_array($ret);
 if($num>0)
 {

@@ -78,7 +78,7 @@
                                     <tbody>
                                         <?php
                                         $i=1;
-include'include/config.php';
+include'../config.php';
 
 $advertiser= $_SESSION['adv_id'];
 $query=mysqli_query($con,"select * from property where adv_id='$advertiser'");

@@ -164,11 +164,7 @@ $img4=$res['image4'];
                             <a class="nav-link" id="6-tab" data-toggle="tab" href="#6" role="tab" aria-controls="6" aria-selected="true">Related Properties</a>
                         </li>
                           <li class="nav-item">
-                            <a class="nav-link" id="7-tab" data-toggle="tab" href="#7" role="tab" aria-controls="7" aria-selected="true">Email</a>
-                        </li>
-                        </li>
-                          <li class="nav-item">
-                            <a class="nav-link" id="8-tab" data-toggle="tab" href="#8" role="tab" aria-controls="8" aria-selected="true">WhatsApp</a>
+                            <a class="nav-link" id="7-tab" data-toggle="tab" href="#7" role="tab" aria-controls="7" aria-selected="true">Contact</a>
                         </li>
                     </ul>
                     <div class="tab-content" id="carTabContent">
@@ -256,7 +252,7 @@ $img4=$res['image4'];
                                 <h3 class="heading">Related Properties</h3>
               <div class="row">
         <?php 
-        include'include/config.php';
+        include'config.php';
         $query1=mysqli_query($con,"select * from student");
         $admin=mysqli_fetch_array($query1);
         
@@ -345,26 +341,17 @@ $img=$res['image'];
 
          <div class="tab-pane fade " id="7" role="tabpanel" aria-labelledby="7-tab">
               <div class="property-contact">
-                 <h3 class="heading">Contact via Email </h3>
+                 <h3 class="heading">Contact via </h3>
+
+                  <a href="<?php  $num=$phoneno;
+                    $link="http://wa.me/6".$num;
+                    echo $link; ?>" target="_blank">WhatsApp</a>
+
+                    
 
                      <!-- <h3 class="heading">Or email </h3> -->
 
                       <div><?php include'contact2.php';?></div>
-              </div>
-         </div>
-
-          <div class="tab-pane fade " id="8" role="tabpanel" aria-labelledby="8-tab">
-              <div class="property-contact">
-                 <h3 class="heading">Contact via WhatsApp</h3>
-
-                  
-
-                     <!-- <h3 class="heading">Or email </h3> -->
-                     <button style="font-size:20px"> <a href="<?php  $num=$phoneno;
-                    $link="http://wa.me/6".$num;
-                    echo $link; ?>" target="_blank">Go to conservation</a> <i class="fa fa-whatsapp"></i></button>
-
-                     
               </div>
          </div>
                   

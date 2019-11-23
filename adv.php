@@ -16,7 +16,7 @@ if(isset($_POST['signup']))
 	$contact=$_POST['contact'];
 	
 	$a=date('Y-m-d');
-	 $msg=mysqli_query($link,"insert into advertiser(fname,lname,email,password,contactno,posting_date) values('$fname','$lname','$email','$password','$contact','$a')");
+	 $msg=mysqli_query($con,"insert into advertiser(fname,lname,email,password,contactno,posting_date) values('$fname','$lname','$email','$password','$contact','$a')");
 
 	if($msg)
 	{
@@ -35,7 +35,7 @@ if(isset($_POST['login1']))
 {
 $password=$_POST['password'];
 $useremail=$_POST['email'];
-$ret= mysqli_query($link,"SELECT * FROM advertiser WHERE email='$useremail' and password='$password'");
+$ret= mysqli_query($con,"SELECT * FROM advertiser WHERE email='$useremail' and password='$password'");
 $num=mysqli_fetch_array($ret);
 
 if($num>0)
@@ -65,7 +65,7 @@ exit();
 //Code for Forgot Password
 if(isset($_POST['send']))
 {
-$row1=mysqli_query($link,"SELECT email,password from advertiser where email='".$_POST['email']."'");
+$row1=mysqli_query($con,"SELECT email,password from advertiser where email='".$_POST['email']."'");
 $row2=mysql_fetch_array($row1);
 if($row2>0)
 {

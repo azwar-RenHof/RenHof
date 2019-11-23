@@ -112,5 +112,5 @@
     </div>
 </header>
 
-<?php include'include/config.php';?>
+<?php include('config.php');?>
 <!-- main header end -->

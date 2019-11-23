@@ -35,7 +35,7 @@
 <body class="theme-red">
 
 
-    <?php include'include/config.php';?>
+    <?php include'../config.php';?>
     <!-- Page Loader 
     <div class="page-loader-wrapper">
         <div class="loader">

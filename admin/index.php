@@ -1,6 +1,6 @@
 <?php
 session_start();
-include('include/config.php'); 
+include('../config.php'); 
 extract($_REQUEST);
 if(isset($save))
 {
