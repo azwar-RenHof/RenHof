@@ -8,6 +8,7 @@ if(strlen($_SESSION['login1'])==0)
 		 $extra="dashboard.php";		
 		$_SESSION["login1"]="";
 		$_SESSION["adv_id"]="";
+		$_SESSION["fname"]="";
 		 header("Location: http://$host$uri/$extra");
 	}
 }

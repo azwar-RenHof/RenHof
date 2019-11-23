@@ -111,9 +111,9 @@ echo "<script>alert('Email not register with us');</script>";
 
 </head>
 
-<body><br>
+<body><br><br><br><br>
 <div class="main">
-		<h1>Registration and Login System for Student</h1>
+		<!-- <h1>Registration and Login System for Student</h1> -->
 	 <div class="sap_tabs">	
 			<div id="horizontalTab" style="display: block; width: 100%; margin: 0px;">
 			  <ul class="resp-tabs-list">
@@ -198,4 +198,5 @@ echo "<script>alert('Email not register with us');</script>";
 	     </div>
 
 </body>
+
 </html>

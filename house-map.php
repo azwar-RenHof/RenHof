@@ -9,8 +9,23 @@ include'include/propertiesheader.php';
 
     <script type="text/javascript"
             src="https://maps.googleapis.com/maps/api/js?language=en&key=AIzaSyCbpa08Ewq2NjT2nr9bRyBj5ncvPcL9CBk&callback=initMap">
+           
     </script>
+
+    <!-- Onclick function for direcction -->
+    <script>
+	
+	</script>
+
+
     <center><b><h2>Location of rental house</h2></b></center>
+
+    <!--  Direction button -->
+    <center><div>
+    		
+    </div></center>
+
+
     <br><center><div id="map" style="height: 400px; width: 600px" ></div></center>
 
     <?php 
@@ -22,6 +37,18 @@ include'include/propertiesheader.php';
 
     ?>
     <script>
+
+
+		var markers = {};
+
+
+
+		var clickedMarker;
+
+    	function getDirection() {
+ 	  var url = 'http://www.google.com/maps/place/' + clickedMarker.getPosition().lat() +',' + clickedMarker.getPosition().lng() ;
+      var inAppBrowser = window.open(url, '_blank', 'location=yes');
+	}
         /**
          * Create new map
          */
@@ -41,7 +68,7 @@ include'include/propertiesheader.php';
          * Global marker object that holds all markers.
          * @type {Object.<string, google.maps.LatLng>}
          */
-        var markers = {};
+        
 
         /**
          * Concatenates given lat and lng with an underscore and returns it.
@@ -72,7 +99,7 @@ include'include/propertiesheader.php';
 
         /**
          * Binds  click event to given marker and invokes a callback function that will remove the marker from map.
-         * @param {!google.maps.Marker} marker A google.maps.Marker instance that the handler will binded.
+         * @param {!google.maps.Marker} marker A google.maps.Marker inzstance that the handler will binded.
          */
         var bindMarkerinfo = function(marker) {
             google.maps.event.addListener(marker, "click", function (point) {
@@ -123,11 +150,13 @@ include'include/propertiesheader.php';
                 "<td><a>Location:</a></td>\n" +
                 "<td><textarea disabled id='manual_description' placeholder='Address'>"+locations[i][3]+"</textarea></td></tr>\n" +
                 "</table>\n" +
+                "<button onclick='getDirection()'>Direction</button>"+
                 "</div>"
             });
 
             google.maps.event.addListener(marker, 'click', (function(marker, i) {
                 return function() {
+                	clickedMarker = marker;
                     infowindow = new google.maps.InfoWindow();
                     confirmed =  locations[i][4] === '1' ?  'checked'  :  0;
                     $("#confirmed").prop(confirmed,locations[i][4]);

@@ -31,11 +31,11 @@ if(isset($_POST['submit'])){
    <label>Message</label><br>
    <textarea name="message" col="45" row="6"></textarea><br>
    
-    <label>From</label><br>
+    <label>From(Your email address)</label><br>
    <input type="input" name="emailfrom" ><br>
 
    
-<input type="submit" value="email" name="submit">
+<input type="submit" value="Sent" name="submit">
   
 </form>
 

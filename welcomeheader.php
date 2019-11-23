@@ -1,5 +1,5 @@
    <?php
-
+echo("<script>location.href = 'http://localhost/pagename.html';</script>");
     include'include/config.php';
     session_start();
     include("checklogin.php");

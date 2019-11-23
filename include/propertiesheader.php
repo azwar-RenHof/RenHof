@@ -64,16 +64,21 @@
 <nav class="navbar navbar-inverse">
   <div class="container-fluid">
     <div class="navbar-header">
-      <a class="navbar-brand" href="#">Details</a>
+      <a class="navbar-brand" href="">Back</a>
+
+
     </div>
     <ul class="nav navbar-nav">
       <li class="active"><a href="welcome.php">Home</a></li>
       <li><a href="studentprofile.php"><?php echo $_SESSION['name'];?></a></li>
-      <li><a href="#">Saved</a></li>
+      
       <li><a href="logout.php">Logout</a></li>
     </ul>
   </div>
 </nav>
+
+
+
   
 
 

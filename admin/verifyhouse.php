@@ -61,7 +61,7 @@
                                             <th>S.no</th>
                                             <th>Title</th>
                                             <th>Bedroom</th>
-                                            <th>Kitchan</th>
+                                            <th>Kitchen</th>
                                             <th>Bathroom</th>
                                             <th>Monthly Rent(RM)</th>
                                               <th>Furnish</th>
@@ -78,7 +78,7 @@
                                             <th>S.no</th>
                                             <th>Title</th>
                                             <th>Bedroom</th>
-                                            <th>Kitchan</th>
+                                            <th>Kitchen</th>
                                             <th>Bathroom</th>
                                             <th>Monthly Rent(RM)</th>
                                             <th>Furnish</th>

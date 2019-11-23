@@ -114,9 +114,9 @@ echo "<script>alert('Email not register with us');</script>";
 </head>
 
 <body>
-<br>
-<div class="main">
-		<h1>Registration and Login System for Advertiser</h1>
+<br><br><br><br>
+<div class="main"><br>
+		<center><b><h1>Registration and Login System for Advertiser</h1><b></center>
 	 <div class="sap_tabs">	
 			<div id="horizontalTab" style="display: block; width: 100%; margin: 0px;">
 			  <ul class="resp-tabs-list">

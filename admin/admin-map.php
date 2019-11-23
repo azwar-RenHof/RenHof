@@ -23,7 +23,7 @@ include('include/sidebar.php');
         infowindow = new google.maps.InfoWindow();
         map = new google.maps.Map(document.getElementById('map'), {
             center: france,
-            zoom: 7
+            zoom: 10
         });
 
 
